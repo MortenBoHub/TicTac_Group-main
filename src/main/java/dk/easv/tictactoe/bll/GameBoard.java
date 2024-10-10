@@ -71,6 +71,8 @@ public class GameBoard implements IGameBoard {
     }
 
     public boolean isGameOver() {
+        if(turn >=9 )
+            return true;
         if(isDraw(board)) {
             return getWinner() == -1;
         }
